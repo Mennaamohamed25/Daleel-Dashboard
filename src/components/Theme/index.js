@@ -5,7 +5,7 @@ import useDarkMode from '@fisch0920/use-dark-mode';
 import Icon from "../Icon";
 
 const Theme = ({ className, visibleSidebar }) => {
-  const darkMode = useDarkMode(false);
+  const [isDarkMode, setDarkMode] = useDarkMode(false);
 
   return (
     <label
@@ -13,8 +13,8 @@ const Theme = ({ className, visibleSidebar }) => {
     >
       <input
         className={styles.input}
-        checked={darkMode.value}
-        onChange={darkMode.toggle}
+        checked={isDarkMode}
+        onChange={() => setDarkMode(!isDarkMode)}
         type="checkbox"
       />
       <span className={styles.inner}>
