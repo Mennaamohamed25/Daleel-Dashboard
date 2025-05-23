@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fisch0920/use-dark-mode": "^2.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
@@ -26,8 +27,7 @@
     "react-tag-input": "^6.8.1",
     "react-tooltip": "^5.10.4",
     "recharts": "^2.5.0",
-    "sass": "^1.60.0",
-    "use-dark-mode": "^2.3.1"
+    "sass": "^1.60.0"
   },
   "scripts": {
     "start": "react-scripts start",
